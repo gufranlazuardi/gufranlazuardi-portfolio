@@ -1,4 +1,5 @@
 import Home from "@/pages";
+import Experience from "@/pages/experience";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -7,6 +8,10 @@ export default function Router() {
     {
       path: "/",
       element: <Home />,
+    },
+    {
+      path: "/experience",
+      element: <Experience />,
     },
   ]);
 
