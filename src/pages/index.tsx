@@ -3,18 +3,27 @@ import { Separator } from "@/components/ui/separator";
 import { Github, Linkedin, Twitter } from "lucide-react";
 
 const Home = () => {
+  const twitterLink = "https://www.twitter.com/gufranlazuardi";
+  const githubLink = "https://www.github.com/gufranlazuardi";
+  const linkedinLink = "https:www.linkedin.com/in/gufran-lazuardi";
+
   return (
     <>
       <Layout>
         <div className="flex gap-24 pl-10 pt-16">
           <div className="flex flex-col gap-8 items-center">
-            <Separator orientation="vertical" className="h-12" />
-            <Twitter />
+            <Separator orientation="vertical" className="h-24 bg-black" />
+            <a href={twitterLink} target="_blank" rel="noopener noreferrer">
+              <Twitter />
+            </a>
+            <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
+              <Linkedin />
+            </a>
+            <a href={githubLink} target="_blank" rel="noopener noreferrer">
+              <Github />
+            </a>
 
-            <Linkedin />
-
-            <Github />
-            <Separator orientation="vertical" className="h-12" />
+            <Separator orientation="vertical" className="h-24 bg-black" />
           </div>
           <div className="flex flex-col gap-8">
             <h1 className=" text-9xl">Bonjour</h1>
