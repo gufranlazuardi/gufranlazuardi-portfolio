@@ -8,6 +8,9 @@ import {
 import { Moon } from "lucide-react";
 
 const Navbar = () => {
+  const resumeDownloadLink =
+    "https://drive.google.com/file/d/1wfZwIMOPmWBtM64xjgq4HE556lktNbz5/view?usp=sharing";
+
   return (
     <>
       <div className=" w-full flex justify-between pb-6 pl-8 pt-4">
@@ -27,7 +30,14 @@ const Navbar = () => {
               <DropdownMenuItem>Education</DropdownMenuItem>
               <DropdownMenuItem>Project</DropdownMenuItem>
               <DropdownMenuItem>Contact</DropdownMenuItem>
-              <DropdownMenuItem>Download my resume</DropdownMenuItem>
+              <a
+                href={resumeDownloadLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                download="Resume"
+              >
+                <DropdownMenuItem>Download my resume</DropdownMenuItem>
+              </a>
             </DropdownMenuContent>
           </DropdownMenu>
           <Moon />
