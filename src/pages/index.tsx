@@ -25,10 +25,10 @@ const Home = () => {
 
             <Separator orientation="vertical" className="h-24 bg-black" />
           </div>
-          <div className="flex flex-col gap-8">
-            <h1 className=" text-9xl">Bonjour</h1>
-            <div className="flex flex-col gap-2">
-              <p className=" text-6xl">I'm Gufran Lazuardi</p>
+          <div className="flex flex-col gap-10">
+            <h1 className=" text-8xl">Bonjour</h1>
+            <div className="flex flex-col gap-4">
+              <p className=" text-5xl">I'm Gufran Lazuardi</p>
               <p className=" text-4xl">Frontend Developer</p>
             </div>
           </div>
