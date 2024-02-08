@@ -10,7 +10,7 @@ const Layout = (prop: Readonly<Props>) => {
 
   return (
     <>
-      <div className="flex flex-col w-full h-screen overflow-auto px-14 py-8">
+      <div className="flex flex-col w-full h-screen overflow-auto px-14 py-8 font-poppins">
         <Navbar />
         <div className="flex flex-col grow">{children}</div>
       </div>
