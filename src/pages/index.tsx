@@ -5,7 +5,7 @@ import { Github, Linkedin, Twitter } from "lucide-react";
 const Home = () => {
   const twitterLink = "https://www.twitter.com/gufranlazuardi";
   const githubLink = "https://www.github.com/gufranlazuardi";
-  const linkedinLink = "https:www.linkedin.com/in/gufran-lazuardi";
+  const linkedinLink = "https://www.linkedin.com/in/gufran-lazuardi";
 
   return (
     <>
