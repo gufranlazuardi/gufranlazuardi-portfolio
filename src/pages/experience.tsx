@@ -9,9 +9,9 @@ const Experience = () => {
         </div>
         <div className="flex gap-7 justify-center mt-10">
           <div className="flex flex-col items-center gap-4">
-            <div className="flex flex-col border rounded-md px-4 py-4 gap-2 max-w-6xl bg-slate-100">
+            <div className="flex flex-col border rounded-md px-4 py-4 gap-2 max-w-6xl bg-slate-100 dark:bg-slate-900">
               <div className="flex gap-2 items-end">
-                <p className="font-bold">Tiket.com</p>
+                <p className="font-bold ">Tiket.com</p>
                 <p>-</p>
                 <p className=" text-slate-500">Jakarta, Indonesia</p>
               </div>
@@ -36,7 +36,7 @@ const Experience = () => {
                 with fixed prices in competitor applications
               </p>
             </div>
-            <div className="flex flex-col border rounded-md  px-4 py-4 gap-2 max-w-6xl bg-slate-100">
+            <div className="flex flex-col border rounded-md  px-4 py-4 gap-2 max-w-6xl bg-slate-100 dark:bg-slate-900">
               <div className="flex gap-2 items-end">
                 <p className="font-bold">Kimia Farma Trading & Distribution</p>
                 <p>-</p>
