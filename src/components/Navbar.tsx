@@ -9,6 +9,7 @@ import { useTheme } from "@/context/theme-provider";
 import { Moon, Sun } from "lucide-react";
 import { Button } from "./ui/button";
 import { useNavigate } from "react-router-dom";
+import { Separator } from "./ui/separator";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className=" w-full flex justify-between pb-6 pl-8 pt-4 sticky z-0">
+      <div className=" w-full flex justify-between pb-6 md:pl-4 lg:pl-6 xl:pl-8 md:pr-4 lg:pr-6 xl:pr-8 pt-4 sticky z-0">
         <Avatar
           className="cursor-pointer"
           onClick={() => {
@@ -49,6 +50,7 @@ const Navbar = () => {
               >
                 About
               </DropdownMenuItem>
+
               <DropdownMenuItem
                 onClick={() => {
                   navigate("/experience");
@@ -57,14 +59,27 @@ const Navbar = () => {
                 Experience
               </DropdownMenuItem>
               <DropdownMenuItem>Education</DropdownMenuItem>
-              <DropdownMenuItem>Project</DropdownMenuItem>
-              <DropdownMenuItem>Contact</DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => {
+                  navigate("/project");
+                }}
+              >
+                Project
+              </DropdownMenuItem>
+              <DropdownMenuItem
+                onClick={() => {
+                  navigate("/contact");
+                }}
+              >
+                Contact
+              </DropdownMenuItem>
               <a
                 href={resumeDownloadLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 download="Resume"
               >
+                <Separator />
                 <DropdownMenuItem>Download my resume</DropdownMenuItem>
               </a>
             </DropdownMenuContent>
