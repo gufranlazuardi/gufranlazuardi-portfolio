@@ -89,7 +89,7 @@ const Navbar = () => {
             variant={"outline"}
             className="border-none"
           >
-            {theme === "light" ? <Sun /> : <Moon />}
+            {theme === "light" ? <Moon /> : <Sun />}
           </Button>
         </div>
       </div>
