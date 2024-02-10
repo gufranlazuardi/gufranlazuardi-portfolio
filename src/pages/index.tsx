@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Github, Linkedin, Twitter } from "lucide-react";
 
