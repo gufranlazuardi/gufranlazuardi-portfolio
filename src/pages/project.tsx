@@ -31,10 +31,10 @@ export const works: Artwork[] = [
     techstack: ["react", "typescript", "tailwind", "axios"],
   },
   {
-    project: "Cinehub",
+    project: "Cinemahub",
     photo:
       "https://images.unsplash.com/photo-1494337480532-3725c85fd2ab?auto=format&fit=crop&w=300&q=80",
-    link: "https://github.com/gufranlazuardi/cinehub",
+    link: "https://github.com/gufranlazuardi/cinemahub",
     techstack: ["react", "typescript", "tailwind"],
   },
   {
