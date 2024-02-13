@@ -10,9 +10,26 @@ import { Moon, Sun } from "lucide-react";
 import { Button } from "./ui/button";
 import { useNavigate } from "react-router-dom";
 import { Separator } from "./ui/separator";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const navigate = useNavigate();
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const resumeDownloadLink =
     "https://drive.google.com/file/d/1wfZwIMOPmWBtM64xjgq4HE556lktNbz5/view?usp=sharing";
@@ -26,7 +43,11 @@ const Navbar = () => {
 
   return (
     <>
-      <div className=" w-full flex justify-between pb-6 md:pl-4 lg:pl-6 xl:pl-8 md:pr-4 lg:pr-6 xl:pr-8 pt-4 sticky z-0">
+      <div
+        className={`w-full flex justify-between pb-6 md:pl-4 lg:pl-6 xl:pl-8 md:pr-4 lg:pr-6 xl:pr-8 pt-4 sticky top-0 z-0 ${
+          scrolled ? "bg-transparent" : ""
+        }`}
+      >
         <Avatar
           className="cursor-pointer"
           onClick={() => {
@@ -58,7 +79,6 @@ const Navbar = () => {
               >
                 Experience
               </DropdownMenuItem>
-              <DropdownMenuItem>Education</DropdownMenuItem>
               <DropdownMenuItem
                 onClick={() => {
                   navigate("/project");
