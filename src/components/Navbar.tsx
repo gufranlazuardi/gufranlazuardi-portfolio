@@ -26,12 +26,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div
-        className={`
-        w-full flex justify-between pb-6 md:pl-4 lg:pl-6 xl:pl-8 md:pr-4 lg:pr-6 xl:pr-8 pt-4 sticky z-0 top-0
-        ${theme === "dark" ? "dark:bg-hsl(222.2, 84%, 4.9%)" : "bg-white"}
-      `}
-      >
+      <div className="w-full flex justify-between pb-6 md:pl-4 lg:pl-6 xl:pl-8 md:pr-4 lg:pr-6 xl:pr-8 pt-4">
         <Avatar
           className="cursor-pointer"
           onClick={() => {
