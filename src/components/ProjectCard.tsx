@@ -20,7 +20,7 @@ const ProjectCard = () => {
             </div>
             <figcaption className="pt-2 text-xs text-muted-foreground">
               <div className="flex flex-col gap-2">
-                <p className="text-lg text-black dark:text-white">
+                <p className="text-lg text-black dark:text-white mt-3">
                   {project.project}
                 </p>
                 <div className="flex gap-2">
