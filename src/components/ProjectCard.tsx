@@ -23,11 +23,11 @@ const ProjectCard = () => {
                 <p className="text-lg text-black dark:text-white mt-3">
                   {project.project}
                 </p>
-                <div className="flex gap-2">
+                <div className="flex gap-2 ">
                   {project.techstack.map((tech, techIndex) => (
                     <p
                       key={techIndex}
-                      className="px-2 py-1 border rounded text-black dark:text-white "
+                      className="px-2 py-1 border rounded text-black hover:bg-blue-800 hover:text-white transition duration-300 ease-in-out dark:text-white "
                     >
                       {tech}
                     </p>
