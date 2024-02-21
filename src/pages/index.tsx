@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <Layout>
-        <div className="flex sm:gap-20 md:gap-12 lg:gap-12 xl:gap-24 sm:pl-4 md:pl-6 lg:pl-8 xl:pl-10 pt-16">
+        <div className="flex pt-16 sm:px-2 md:px-6 lg:px-8 xl:px-28">
           <div className="flex flex-col gap-8 items-center">
             <Separator
               orientation="vertical"
@@ -31,12 +31,12 @@ const Home = () => {
               className="h-24 bg-black dark:bg-white"
             />
           </div>
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-10 ml-10">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
               Bonjour
             </h1>
             <div className="flex flex-col gap-4">
-              <p className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+              <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
                 I'm Gufran Lazuardi
               </p>
               <span className="inline-flex flex-col h-[calc(theme(fontSize.lg)*theme(lineHeight.tight))] sm:h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] overflow-hidden">

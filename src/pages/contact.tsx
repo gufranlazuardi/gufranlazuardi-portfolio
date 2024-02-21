@@ -5,7 +5,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 const Contact = () => {
   return (
     <Layout>
-      <div className="flex flex-col">
+      <div className="flex flex-col sm:px-2 md:px-6 lg:px-8 xl:px-28">
         <div className="text-center">
           <h1 className="text-2xl py-2">Want to collaboration?</h1>
         </div>

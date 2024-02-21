@@ -1,31 +1,24 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "./ui/card";
+import { Separator } from "./ui/separator";
 
 const CardExperience = () => {
   return (
     <>
       <div className="flex flex-col gap-8 mt-10">
-        <Card className="flex flex-col">
-          <CardHeader>
-            <div className="flex justify-between">
-              <CardTitle>
-                Tiket.com{" "}
-                <span className="text-slate-500 text-base font-normal">
-                  - Jakarta, Indonesia
-                </span>
-              </CardTitle>
-              <CardContent>Oct 2022 – Jan 2024</CardContent>
+        <div className="flex flex-col gap-4">
+          <div className="flex justify-between">
+            <div className="gap-2">
+              <span className="text-2xl">Tiket.com {""}</span>
+              <span>- {""}</span>
+              <span>Jakarta, Indonesia</span>
             </div>
-            <CardDescription className="text-black text-base dark:text-white">
-              Product Operations
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
+            <div>
+              <p className="text-xs md:text-md lg:text-lg xl:text-lg">
+                Oct 2022 – Jan 2024
+              </p>
+            </div>
+          </div>
+          <p>Product Operations</p>
+          <div className="flex flex-col gap-2 text-justify">
             <p className="text-sm">
               • Ensuring precise mapping in the system by rectifying
               discrepancies between application points and actual locations
@@ -45,49 +38,51 @@ const CardExperience = () => {
               prices based on market adjustments, ensuring alignment with fixed
               prices in competitor applications
             </p>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardHeader>
-            <div className="flex justify-between">
-              <CardTitle>
+          </div>
+        </div>
+        <Separator />
+        <div className="flex flex-col gap-4">
+          <div className="flex justify-between">
+            <div className="gap-2">
+              <span className="text-2xl">
                 Kimia Farma Trading & Distribution{" "}
-                <span className="text-slate-500 text-base font-normal">
-                  - Jakarta, Indonesia
-                </span>
-              </CardTitle>
-              <CardContent>May 2021 - Sep 2022</CardContent>
+              </span>
+              <span>- {""}</span>
+              <span>Jakarta, Indonesia</span>
             </div>
-            <CardDescription className="text-black text-base dark:text-white">
-              Monitoring & Evaluation E-catalogue
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="text-sm">
-            <p>
+            <div>
+              <p className="text-xs md:text-md lg:text-lg xl:text-lg">
+                Oct 2022 – Jan 2024
+              </p>
+            </div>
+          </div>
+          <p>Product Operations</p>
+          <div className="flex flex-col gap-2 text-justify">
+            <p className="text-sm">
               • Systematically reported and recorded distribution data,
               encompassing Paket ID, Stock Transfer Order (STO), Purchase Order
               (PO), and Facture. Executed seamless uploads to Google Data Studio
               for comprehensive insights
             </p>
-            <p>
+            <p className="text-sm">
               • Ensured swift processing of stock and non-stock purchase
               requisitions, collaborating closely with suppliers and vendors.
               Oversaw theprocurement distribution to guarantee timely and
               well-managed deliveries
             </p>
-            <p>
-              •Coordinated with suppliers and stakeholders for timely repurchase
-              in cases where stock was unavailable at branch offices.
+            <p className="text-sm">
+              • Coordinated with suppliers and stakeholders for timely
+              repurchase in cases where stock was unavailable at branch offices.
               Monitoredthe stock tracking process to prevent indentations and
               facilitated efficient delivery tracking
             </p>
-            <p>
+            <p className="text-sm">
               • Implemented a proactive approach to follow up on outstanding or
               pending stock at various stakeholders, guaranteeing the smooth and
               timely distribution of stocks
             </p>
-          </CardContent>
-        </Card>
+          </div>
+        </div>
       </div>
     </>
   );
