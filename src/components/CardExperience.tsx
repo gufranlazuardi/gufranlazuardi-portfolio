@@ -56,7 +56,7 @@ const CardExperience = () => {
               </p>
             </div>
           </div>
-          <p>Product Operations</p>
+          <p>Moniotring & Evaluation E-catalogue</p>
           <div className="flex flex-col gap-2 text-justify">
             <p className="text-sm">
               • Systematically reported and recorded distribution data,
