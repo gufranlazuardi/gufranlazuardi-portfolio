@@ -15,7 +15,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const resumeDownloadLink =
-    "https://drive.google.com/file/d/1wfZwIMOPmWBtM64xjgq4HE556lktNbz5/view?usp=sharing";
+    "https://drive.google.com/file/d/1Fi16rwIcM6wnYuZSHVjbAQ0_XVostzP9/view?usp=drive_link";
 
   const { theme, setTheme } = useTheme();
 
