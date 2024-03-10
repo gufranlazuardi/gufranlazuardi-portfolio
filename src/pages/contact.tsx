@@ -1,11 +1,22 @@
 import ContactForm from "@/components/ContactForm";
 import Layout from "@/components/Layout";
 import { Github, Linkedin, Mail } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Contact = () => {
+  const variants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0 },
+  };
   return (
     <Layout>
-      <div className="flex flex-col sm:px-2 md:px-6 lg:px-8 xl:px-28">
+      <motion.div
+        className="flex flex-col sm:px-2 md:px-6 lg:px-8 xl:px-28"
+        initial="hidden"
+        animate="visible"
+        variants={variants}
+        transition={{ duration: 0.5 }}
+      >
         <div className="text-center">
           <h1 className="text-2xl py-2">Want to collaboration?</h1>
         </div>
@@ -36,7 +47,7 @@ const Contact = () => {
             <ContactForm />
           </div>
         </div>
-      </div>
+      </motion.div>
     </Layout>
   );
 };

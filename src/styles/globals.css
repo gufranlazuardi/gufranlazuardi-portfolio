@@ -109,3 +109,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+html {
+  scroll-snap-type: mandatory;
+  scroll-behavior: smooth;
+}

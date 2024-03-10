@@ -1,16 +1,28 @@
 import Layout from "@/components/Layout";
 import { Separator } from "@/components/ui/separator";
 import { Github, Linkedin, Twitter } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const twitterLink = "https://www.twitter.com/gufranlazuardi";
   const githubLink = "https://www.github.com/gufranlazuardi";
   const linkedinLink = "https://www.linkedin.com/in/gufran-lazuardi";
 
+  const variants = {
+    hidden: { opacity: 0, x: -50 },
+    visible: { opacity: 1, x: 0 },
+  };
+
   return (
     <>
       <Layout>
-        <div className="flex pt-16 sm:px-2 md:px-6 lg:px-8 xl:px-28">
+        <motion.div
+          className="flex pt-16 sm:px-2 md:px-6 lg:px-8 xl:px-28"
+          initial="hidden"
+          animate="visible"
+          variants={variants}
+          transition={{ duration: 0.5 }}
+        >
           <div className="flex flex-col gap-8 items-center">
             <Separator
               orientation="vertical"
@@ -63,7 +75,7 @@ const Home = () => {
               </span>
             </div>
           </div>
-        </div>
+        </motion.div>
       </Layout>
     </>
   );

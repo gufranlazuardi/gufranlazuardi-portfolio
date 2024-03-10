@@ -1,10 +1,21 @@
-import Layout from "@/components/Layout";
 import ProjectCard from "@/components/ProjectCard";
+import Layout from "@/components/Layout";
+import { motion } from "framer-motion";
 
 const Project = () => {
+  const variants = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0 },
+  };
   return (
     <Layout>
-      <div className="grid grid-cols-1">
+      <motion.div
+        className="grid grid-cols-1"
+        initial="hidden"
+        animate="visible"
+        variants={variants}
+        transition={{ duration: 0.5 }}
+      >
         <h1 className="font-bold text-2xl pb-16 pt-2 text-center">Project</h1>
         <div className="flex flex-col gap-6 items-center">
           <p className="text-sm w-3/4 text-justify">
@@ -16,7 +27,7 @@ const Project = () => {
           </p>
           <ProjectCard />
         </div>
-      </div>
+      </motion.div>
     </Layout>
   );
 };
