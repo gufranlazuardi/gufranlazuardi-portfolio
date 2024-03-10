@@ -9,10 +9,10 @@ const CardExperience = () => {
             <div className="gap-2">
               <span className="text-2xl">Tiket.com {""}</span>
               <span>- {""}</span>
-              <span>Jakarta, Indonesia</span>
+              <span className="italic">Jakarta, Indonesia</span>
             </div>
             <div>
-              <p className="text-xs md:text-md lg:text-lg xl:text-lg">
+              <p className="text-xs md:text-md lg:text-base xl:text-base">
                 Oct 2022 – Jan 2024
               </p>
             </div>
@@ -48,10 +48,10 @@ const CardExperience = () => {
                 Kimia Farma Trading & Distribution{" "}
               </span>
               <span>- {""}</span>
-              <span>Jakarta, Indonesia</span>
+              <span className="italic">Jakarta, Indonesia</span>
             </div>
             <div>
-              <p className="text-xs md:text-md lg:text-lg xl:text-lg">
+              <p className="text-xs md:text-md lg:text-base xl:text-base">
                 Oct 2022 – Jan 2024
               </p>
             </div>

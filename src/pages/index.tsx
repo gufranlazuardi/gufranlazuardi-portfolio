@@ -9,7 +9,7 @@ const Home = () => {
   const linkedinLink = "https://www.linkedin.com/in/gufran-lazuardi";
 
   const variants = {
-    hidden: { opacity: 0, x: -50 },
+    hidden: { opacity: 0, x: -200 },
     visible: { opacity: 1, x: 0 },
   };
 
