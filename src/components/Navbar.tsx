@@ -10,6 +10,7 @@ import { Moon, Sun } from "lucide-react";
 import { Button } from "./ui/button";
 import { useNavigate } from "react-router-dom";
 import { Separator } from "./ui/separator";
+import icon from "../assets/127754894.png";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -33,7 +34,7 @@ const Navbar = () => {
             navigate("/");
           }}
         >
-          <AvatarImage src="https://github.com/shadcn.png" />
+          <AvatarImage src={icon} />
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
 
