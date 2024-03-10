@@ -6,15 +6,16 @@ const ProjectCard = () => {
     <ScrollArea className="w-3/4 whitespace-nowrap rounded-md border">
       <div className="flex w-max space-x-4 p-4">
         {works.map((project) => (
-          <figure key={project.project} className="shrink-0 ">
+          <figure key={project.project} className="shrink-0">
             <div className="overflow-hidden rounded-md">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <img
                   src={project.photo}
                   alt={`Photo by ${project.photo}`}
-                  className="aspect-[6/3]"
+                  className="aspect-[6/3] hover:scale-95 hover:filter hover:  transition"
                   width={300}
                   height={400}
+                  loading="lazy"
                 />
               </a>
             </div>
