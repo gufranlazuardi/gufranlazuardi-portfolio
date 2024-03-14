@@ -1,10 +1,11 @@
 import Layout from "@/components/Layout";
 import { Separator } from "@/components/ui/separator";
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { DribbbleIcon, Github, Linkedin } from "lucide-react";
 import { motion } from "framer-motion";
+import Role from "@/components/Role";
 
 const Home = () => {
-  const twitterLink = "https://www.twitter.com/gufranlazuardi";
+  const dribbleLink = "https://dribbble.com/gufranlazuardi";
   const githubLink = "https://www.github.com/gufranlazuardi";
   const linkedinLink = "https://www.linkedin.com/in/gufran-lazuardi";
 
@@ -18,7 +19,7 @@ const Home = () => {
       <Layout>
         <div className="flex flex-col">
           <motion.div
-            className="flex pt-16 sm:px-2 md:px-6 lg:px-8 xl:px-28"
+            className="flex pt-16 sm:px-10 md:px-6 lg:px-8 xl:px-28"
             initial="hidden"
             animate="visible"
             variants={variants}
@@ -29,8 +30,8 @@ const Home = () => {
                 orientation="vertical"
                 className="h-24 bg-black dark:bg-white"
               />
-              <a href={twitterLink} target="_blank" rel="noopener noreferrer">
-                <Twitter />
+              <a href={dribbleLink} target="_blank" rel="noopener noreferrer">
+                <DribbbleIcon />
               </a>
               <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
                 <Linkedin />
@@ -52,28 +53,7 @@ const Home = () => {
                 <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
                   I'm Gufran Lazuardi
                 </p>
-                <span className="inline-flex flex-col h-[calc(theme(fontSize.lg)*theme(lineHeight.tight))] sm:h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] overflow-hidden">
-                  <ul className="block text-base sm:text-3xl leading-tight animate-text-slide">
-                    <li className="text-[#2f7df4] text-xl sm:text-3xl font-bold">
-                      Frontend Developer
-                    </li>
-                    <li className="text-[#2f7df4] text-xl sm:text-3xl font-bold">
-                      Gamer
-                    </li>
-                    <li className="text-[#2f7df4] text-xl sm:text-3xl font-bold">
-                      Runner
-                    </li>
-                    <li className="text-[#2f7df4] text-xl sm:text-3xl font-bold">
-                      Frontend Developer
-                    </li>
-                    <li className="text-[#2f7df4] text-xl sm:text-3xl font-bold">
-                      Gamer
-                    </li>
-                    <li className="text-[#2f7df4] text-xl sm:text-3xl font-bold">
-                      Runner
-                    </li>
-                  </ul>
-                </span>
+                <Role />
               </div>
             </div>
           </motion.div>
