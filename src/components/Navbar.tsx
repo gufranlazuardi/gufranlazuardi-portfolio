@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full flex justify-between pb-6 sm:px-2 md:px-6 lg:px-8 xl:px-28 pt-4">
+      <div className="w-full flex justify-between pb-6 px-0 md:px-6 lg:px-8 xl:px-28 pt-4">
         <Avatar
           className="cursor-pointer"
           onClick={() => {
@@ -38,7 +38,7 @@ const Navbar = () => {
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
 
-        <div className="flex gap-4 text-sm pr-8 items-center">
+        <div className="flex gap-4 text-sm items-center">
           <DropdownMenu>
             <DropdownMenuTrigger className="w-fit h-fit border-b-2 border-black py-1 px-2 dark:border-white">
               <p className="text-base">Nav</p>
