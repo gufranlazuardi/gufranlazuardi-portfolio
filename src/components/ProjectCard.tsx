@@ -3,7 +3,7 @@ import { works } from "@/utils/project-data";
 
 const ProjectCard = () => {
   return (
-    <ScrollArea className="w-3/4 whitespace-nowrap rounded-md border">
+    <ScrollArea className="w-full md:w-3/4 lg:w-3/4 xl:w-3/4 whitespace-nowrap rounded-md border">
       <div className="flex w-max space-x-4 p-4">
         {works.map((project) => (
           <figure key={project.project} className="shrink-0">

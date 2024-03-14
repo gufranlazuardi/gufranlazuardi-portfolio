@@ -18,7 +18,7 @@ const Project = () => {
       >
         <h1 className="font-bold text-2xl pb-16 pt-2 text-center">Project</h1>
         <div className="flex flex-col gap-6 items-center">
-          <p className="text-sm w-3/4 text-justify">
+          <p className="text-sm sm:w-full md:w-3/4 lg:w-3/4 xl:w-3/4 text-justify">
             At Alterra Academy, I excelled in diverse projects, mastering
             technologies such as React, TypeScript, Tailwind CSS, and Axios.
             These experiences honed my technical proficiency and collaborative
