@@ -15,8 +15,7 @@ import icon from "../assets/127754894.png";
 const Navbar = () => {
   const navigate = useNavigate();
 
-  const resumeDownloadLink =
-    "https://drive.google.com/file/d/1Fi16rwIcM6wnYuZSHVjbAQ0_XVostzP9/view?usp=drive_link";
+  const resumeDownloadLink = "https://drive.google.com/file/d/16L_9_JdZ30H2zGQqMWISckbWwxS9R9Hv/view?usp=sharing";
 
   const { theme, setTheme } = useTheme();
 
@@ -73,22 +72,13 @@ const Navbar = () => {
               >
                 Contact
               </DropdownMenuItem>
-              <a
-                href={resumeDownloadLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                download="Resume"
-              >
+              <a href={resumeDownloadLink} target="_blank" rel="noopener noreferrer" download="Resume">
                 <Separator />
                 <DropdownMenuItem>Download my resume</DropdownMenuItem>
               </a>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Button
-            onClick={() => handleTheme()}
-            variant={"outline"}
-            className="border-none"
-          >
+          <Button onClick={() => handleTheme()} variant={"outline"} className="border-none">
             {theme === "light" ? <Moon /> : <Sun />}
           </Button>
         </div>

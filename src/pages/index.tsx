@@ -26,33 +26,23 @@ const Home = () => {
             transition={{ duration: 0.5 }}
           >
             <div className="flex flex-col gap-8 items-center">
-              <Separator
-                orientation="vertical"
-                className="h-24 bg-black dark:bg-white"
-              />
+              <Separator orientation="vertical" className="h-24 bg-black dark:bg-white" />
               <a href={dribbleLink} target="_blank" rel="noopener noreferrer">
-                <DribbbleIcon />
+                <DribbbleIcon className="hover:transition-colors duration-700 hover:text-pink-500" />
               </a>
               <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
-                <Linkedin />
+                <Linkedin className="hover:transition-colors duration-700 hover:text-blue-300" />
               </a>
               <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                <Github />
+                <Github className="hover:transition-colors duration-700 hover:text-slate-500" />
               </a>
 
-              <Separator
-                orientation="vertical"
-                className="h-24 bg-black dark:bg-white"
-              />
+              <Separator orientation="vertical" className="h-24 bg-black dark:bg-white" />
             </div>
             <div className="flex flex-col gap-10 ml-10">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
-                Bonjour
-              </h1>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">Bonjour</h1>
               <div className="flex flex-col gap-4">
-                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-                  I'm Gufran Lazuardi
-                </p>
+                <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">I'm Gufran Lazuardi</p>
                 <Role />
               </div>
             </div>
