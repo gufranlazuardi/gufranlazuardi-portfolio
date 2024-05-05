@@ -15,7 +15,7 @@ import icon from "../assets/127754894.png";
 const Navbar = () => {
   const navigate = useNavigate();
 
-  const resumeDownloadLink = "https://drive.google.com/file/d/16L_9_JdZ30H2zGQqMWISckbWwxS9R9Hv/view?usp=sharing";
+  const resumeDownloadLink = "https://drive.google.com/file/d/1QD01_NppAoayJ3krxAULxRZoEvJ-V_Rn/view?usp=sharing";
 
   const { theme, setTheme } = useTheme();
 
