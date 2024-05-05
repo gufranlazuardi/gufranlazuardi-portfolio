@@ -1,21 +1,15 @@
 import Layout from "@/components/Layout";
 import { Separator } from "@/components/ui/separator";
 import { DribbbleIcon, Github, Linkedin } from "lucide-react";
-import { motion } from "framer-motion";
 import Role from "@/components/Role";
-import Aos from "aos";
-import "aos/dist/aos.css";
 import { useEffect } from "react";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 const Home = () => {
   const dribbleLink = "https://dribbble.com/gufranlazuardi";
   const githubLink = "https://www.github.com/gufranlazuardi";
   const linkedinLink = "https://www.linkedin.com/in/gufran-lazuardi";
-
-  const variants = {
-    hidden: { opacity: 0, x: -200 },
-    visible: { opacity: 1, x: 0 },
-  };
 
   useEffect(() => {
     Aos.init();
