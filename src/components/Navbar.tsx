@@ -1,4 +1,3 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -6,16 +5,32 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useTheme } from "@/context/theme-provider";
-import { Moon, Sun } from "lucide-react";
+import { Moon, Slack, Sun } from "lucide-react";
 import { Button } from "./ui/button";
 import { useNavigate } from "react-router-dom";
 import { Separator } from "./ui/separator";
-import icon from "../assets/127754894.png";
 
 const Navbar = () => {
   const navigate = useNavigate();
 
-  const resumeDownloadLink = "https://drive.google.com/file/d/1nvVIZ_vgLXbDA3zZdsaY02HAGA3ezMID/view?usp=sharing";
+  const handleDownload = () => {
+    const resumeUrl = "public/gufran-lazuardi-resume-ats.pdf";
+
+    // Create a temporary link element
+    const link = document.createElement("a");
+    link.href = resumeUrl;
+
+    link.download = "gufran-lazuardi-resume.pdf";
+
+    // Append the link to the body
+    document.body.appendChild(link);
+
+    // Trigger the click event to initiate download
+    link.click();
+
+    // Remove the link from the body
+    document.body.removeChild(link);
+  };
 
   const { theme, setTheme } = useTheme();
 
@@ -27,15 +42,14 @@ const Navbar = () => {
   return (
     <>
       <div className="w-full flex justify-between pb-6 px-0 md:px-6 lg:px-8 xl:px-28 pt-4">
-        <Avatar
+        <div
           className="cursor-pointer"
           onClick={() => {
             navigate("/");
           }}
         >
-          <AvatarImage src={icon} />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar>
+          <Slack size={40} />
+        </div>
 
         <div className="flex gap-4 text-sm items-center">
           <DropdownMenu>
@@ -72,13 +86,17 @@ const Navbar = () => {
               >
                 Contact
               </DropdownMenuItem>
-              <a href={resumeDownloadLink} target="_blank" rel="noopener noreferrer" download="Resume">
-                <Separator />
-                <DropdownMenuItem>Download my resume</DropdownMenuItem>
-              </a>
+              <Separator />
+              <DropdownMenuItem onClick={handleDownload}>
+                Download my resume
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
-          <Button onClick={() => handleTheme()} variant={"outline"} className="border-none">
+          <Button
+            onClick={() => handleTheme()}
+            variant={"outline"}
+            className="border-none"
+          >
             {theme === "light" ? <Moon /> : <Sun />}
           </Button>
         </div>
