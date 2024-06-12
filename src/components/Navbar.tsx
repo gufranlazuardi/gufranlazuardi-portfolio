@@ -14,7 +14,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const handleDownload = () => {
-    const resumeUrl = "public/gufran-lazuardi-resume-ats.pdf";
+    const resumeUrl = "/gufran-lazuardi-resume-ats.pdf";
 
     // Create a temporary link element
     const link = document.createElement("a");
