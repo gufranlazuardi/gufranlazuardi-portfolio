@@ -48,7 +48,8 @@ const Navbar = () => {
             navigate("/");
           }}
         >
-          <Slack size={40} />
+          <Slack size={40} className="transform transition-transform hover:scale-125" />
+
         </div>
 
         <div className="flex gap-4 text-sm items-center">
